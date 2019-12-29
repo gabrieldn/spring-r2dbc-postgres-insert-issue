@@ -1,0 +1,18 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testcontainers:postgresql:1.12.4'
+    implementation 'io.r2dbc:r2dbc-pool:0.8.0.RELEASE'
+    implementation 'io.r2dbc:r2dbc-postgresql:0.8.0.RELEASE'
+    implementation 'org.springframework.data:spring-data-r2dbc:1.0.0.RELEASE'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+    implementation 'org.apache.logging.log4j:log4j-to-slf4j:2.13.0'
+    implementation 'org.slf4j:jul-to-slf4j:1.7.30'
+}
